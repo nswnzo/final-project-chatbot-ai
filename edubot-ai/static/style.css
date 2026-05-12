@@ -1,0 +1,186 @@
+body{
+
+    margin:0;
+
+    font-family:Arial, sans-serif;
+
+    background:#f6f1f3;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+.chat-container{
+
+    width:560px;
+    height:650px;
+
+    background:white;
+
+    border-radius:24px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+
+    overflow:hidden;
+}
+
+.header{
+
+    padding:28px 40px;
+
+    background:white;
+
+    border-bottom:1px solid #ececec;
+}
+
+.header h1{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#2d2d2d;
+
+    letter-spacing:0.3px;
+}
+
+.header p{
+
+    margin-top:6px;
+
+    font-size:14px;
+
+    color:#777;
+}
+
+#chat-box{
+
+    flex:1;
+
+    padding:24px;
+
+    overflow-y:auto;
+
+    background:#fcfcfc;
+
+    box-sizing:border-box;
+}
+
+.message{
+
+    max-width:75%;
+
+    padding:14px 18px;
+
+    margin:14px 0;
+
+    border-radius:16px;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+    word-wrap:break-word;
+}
+
+.user{
+
+    margin-left:auto;
+
+    background:#d97b93;
+
+    color:white;
+
+    border-bottom-right-radius:4px;
+}
+
+.bot{
+
+    margin-right:auto;
+
+    background:#f4e8ec;
+
+    color:#333;
+
+    border-bottom-left-radius:4px;
+}
+
+.label{
+
+    font-size:12px;
+
+    margin-bottom:6px;
+
+    opacity:0.7;
+
+    font-weight:600;
+}
+
+.input-area{
+
+    display:flex;
+
+    gap:12px;
+
+    padding:18px 22px;
+
+    background:white;
+
+    border-top:1px solid #ececec;
+}
+
+input{
+
+    flex:1;
+
+    padding:14px 16px;
+
+    border:1px solid #ddd;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:15px;
+
+    background:#fafafa;
+}
+
+input:focus{
+
+    border:1px solid #d97b93;
+}
+
+button{
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#d97b93;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+button:hover{
+
+    opacity:0.9;
+}
